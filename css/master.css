@@ -1,0 +1,46 @@
+body{
+    padding: 10px;
+}
+.campo{
+    float: left;
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 133px 133px 133px;
+    grid-template-rows: 133px 133px 133px;
+}
+.centroCentro{
+    border: 5px solid black;
+}
+.superirorCentro{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+.inferiorCentro{
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+.centroDireito{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.centroEsquerdo{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.alinhamento{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.alinhamento h1{
+    display: none;
+}
+.selectPlayer{
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    float: left;
+}
