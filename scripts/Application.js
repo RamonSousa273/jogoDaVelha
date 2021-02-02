@@ -98,13 +98,13 @@ function placePiece(local){
         }
         let win = verifyWin();
         if(win == "Player1 WIN"){
-            alert(player1 + " WIN!!");
+            alert(player1 + " Ganhol!!");
         }else if(win == "Player2 WIN"){
-            alert(player2 + " WIN!!");
+            alert(player2 + " Ganhol!!");
         }
         control++;
     }else{
-        alert("Insert players name and click in set player button!");
+        alert("Insira o nome dos jogadores e clique no botão jogar.");
     }
 }
 
