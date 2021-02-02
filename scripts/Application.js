@@ -6,75 +6,131 @@ function setPlayer(selectPlayer){
 }
 
 function verifyWin(){
-    let a1 = document.getElementById("a1").innerHTML;
-    let b1 = document.getElementById("b1").innerHTML;
-    let c1 = document.getElementById("c1").innerHTML;
+    let a1 = document.getElementById("a1");
+    let b1 = document.getElementById("b1");
+    let c1 = document.getElementById("c1");
 
-    let a2 = document.getElementById("a2").innerHTML;
-    let b2 = document.getElementById("b2").innerHTML;
-    let c2 = document.getElementById("c2").innerHTML;
+    let a2 = document.getElementById("a2");
+    let b2 = document.getElementById("b2");
+    let c2 = document.getElementById("c2");
 
-    let a3 = document.getElementById("a3").innerHTML;
-    let b3 = document.getElementById("b3").innerHTML;
-    let c3 = document.getElementById("c3").innerHTML;
+    let a3 = document.getElementById("a3");
+    let b3 = document.getElementById("b3");
+    let c3 = document.getElementById("c3");
 
     let notWiner = true;
 
-    if((a1 == b1) && (b1 == c1) && (a1 != "") && (b1 != "") && (c1 != "")){
-        if(a1 == "X"){
+    if((a1.innerHTML == b1.innerHTML) && (b1.innerHTML == c1.innerHTML) 
+    && (a1.innerHTML != "") && (b1.innerHTML != "") && (c1.innerHTML != "")){
+        if(a1.innerHTML == "X"){
+            a1.style.color = "red";
+            b1.style.color = "red";
+            c1.style.color = "red";
             return "Player1 WIN";
         }else{
+            a1.style.color = "red";
+            b1.style.color = "red";
+            c1.style.color = "red";
             return "Player2 WIN";
         }
     }
-    if((a2 == b2) && (b2 == c2) && (a2 != "") && (b2 != "") && (c2 != "")){
-        if(a2 == "X"){
+    if((a2.innerHTML == b2.innerHTML) && (b2.innerHTML == c2.innerHTML) && (a2.innerHTML != "") 
+    && (b2.innerHTML != "") && (c2.innerHTML != "")){
+        if(a2.innerHTML == "X"){
+            a2.style.color = "red";
+            b2.style.color = "red";
+            c2.style.color = "red";
             return "Player1 WIN";
         }else{
+            a2.style.color = "red";
+            b2.style.color = "red";
+            c2.style.color = "red";
             return "Player2 WIN";
         }
     }
-    if((a3 == b3) && (b3 == c3) && (a3 != "") && (b3 != "") && (c3 != "")){
-        if(a3 == "X"){
+    if((a3.innerHTML == b3.innerHTML) && (b3.innerHTML == c3.innerHTML) && (a3.innerHTML != "") 
+    && (b3.innerHTML != "") && (c3.innerHTML != "")){
+        if(a3.innerHTML == "X"){
+            a3.style.color = "red";
+            b3.style.color = "red";
+            c3.style.color = "red";
             return "Player1 WIN";
         }else{
+            a3.style.color = "red";
+            b3.style.color = "red";
+            c3.style.color = "red";
             return "Player2 WIN";
         }
     }
 
-    if((a1 == a2) && (a2 == a3) && (a1 != "") && (a2 != "") && (a3 != "")){
-        if(a1 == "X"){
+    if((a1.innerHTML == a2.innerHTML) && (a2.innerHTML == a3.innerHTML) && (a1.innerHTML != "") 
+    && (a2.innerHTML != "") && (a3.innerHTML != "")){
+        if(a1.innerHTML == "X"){
+            a1.style.color = "red";
+            a2.style.color = "red";
+            a3.style.color = "red";
             return "Player1 WIN";
         }else{
+            a1.style.color = "red";
+            a2.style.color = "red";
+            a3.style.color = "red";
             return "Player2 WIN";
         }
     }
-    if((b1 == b2) && (b2 == b3) && (b1 != "") && (b2 != "") && (b3 != "")){
-        if(b1 == "X"){
+    if((b1.innerHTML == b2.innerHTML) && (b2.innerHTML == b3.innerHTML) && (b1.innerHTML != "") 
+    && (b2.innerHTML != "") && (b3.innerHTML != "")){
+        if(b1.innerHTML == "X"){
+            b1.style.color = "red";
+            b2.style.color = "red";
+            b3.style.color = "red";
             return "Player1 WIN";
         }else{
+            b1.style.color = "red";
+            b2.style.color = "red";
+            b3.style.color = "red";
             return "Player2 WIN";
         }
     }
-    if((c1 == c2) && (c2 == c3) && (c1 != "") && (c2 != "") && (c3 != "")){
-        if(c1 == "X"){
+    if((c1.innerHTML == c2.innerHTML) && (c2.innerHTML == c3.innerHTML) && (c1.innerHTML != "") 
+    && (c2.innerHTML != "") && (c3.innerHTML != "")){
+        if(c1.innerHTML == "X"){
+            c1.style.color = "red";
+            c2.style.color = "red";
+            c3.style.color = "red";
             return "Player1 WIN";
         }else{
+            c1.style.color = "red";
+            c2.style.color = "red";
+            c3.style.color = "red";
             return "Player2 WIN";
         }
     }
 
-    if((a1 == b2) && (b2 == c3) && (a1 != "") && (b2 != "") && (c3 != "")){
-        if(a1 == "X"){
+    if((a1.innerHTML == b2.innerHTML) && (b2.innerHTML == c3.innerHTML) && (a1.innerHTML != "") 
+    && (b2.innerHTML != "") && (c3.innerHTML != "")){
+        if(a1.innerHTML == "X"){
+            a1.style.color = "red";
+            b2.style.color = "red";
+            c3.style.color = "red";
             return "Player1 WIN";
         }else{
+            a1.style.color = "red";
+            b2.style.color = "red";
+            c3.style.color = "red";
             return "Player2 WIN";
         }
     }
-    if((a3 == b2) && (b2 == c1) && (a3 != "") && (b2 != "") && (c1 != "")){
-        if(a3 == "X"){
+    if((a3.innerHTML == b2.innerHTML) && (b2.innerHTML == c1.innerHTML) && (a3.innerHTML != "") 
+    && (b2.innerHTML != "") && (c1.innerHTML != "")){
+        if(a3.innerHTML == "X"){
+            a3.style.color = "red";
+            b2.style.color = "red";
+            c1.style.color = "red";
             return "Player1 WIN";
         }else{
+            a3.style.color = "red";
+            b2.style.color = "red";
+            c1.style.color = "red";
             return "Player2 WIN";
         }
     }
@@ -98,9 +154,9 @@ function placePiece(local){
         }
         let win = verifyWin();
         if(win == "Player1 WIN"){
-            alert(player1 + " Ganhol!!");
+            setTimeout(function(){alert(player1 + " Ganhol!!")}, 250);
         }else if(win == "Player2 WIN"){
-            alert(player2 + " Ganhol!!");
+            setTimeout(function(){alert(player2 + " Ganhol!!")}, 250);
         }
         control++;
     }else{
