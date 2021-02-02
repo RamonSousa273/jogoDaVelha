@@ -35,9 +35,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-.alinhamento h1{
-    display: none;
-}
 .selectPlayer{
     width: 300px;
     height: 400px;

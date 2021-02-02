@@ -10,45 +10,47 @@
 </head>
 <body>
     <div class="campo">
-        <div onclick="mostraX('x1')" class="superiorEsquerdo alinhamento">
-            <h1 id="x1"></h1>
+        <div onclick="placePiece('a1')" class="superiorEsquerdo alinhamento">
+            <h1 id="a1"></h1>
         </div>
-        <div onclick="mostraX('x2')" class="superirorCentro alinhamento">
-            <h1 id="x2"></h1>
+        <div onclick="placePiece('b1')" class="superirorCentro alinhamento">
+            <h1 id="b1"></h1>
         </div>
-        <div onclick="mostraX('x3')" class="superiorDireito alinhamento">
-            <h1 id="x3"></h1>
+        <div onclick="placePiece('c1')" class="superiorDireito alinhamento">
+            <h1 id="c1"></h1>
         </div>
-        <div onclick="mostraX('x4')" class="centroEsquerdo alinhamento">
-            <h1 id="x4"></h1>
+
+        <div onclick="placePiece('a2')" class="centroEsquerdo alinhamento">
+            <h1 id="a2"></h1>
         </div>
-        <div onclick="mostraX('x5')" class="centroCentro alinhamento">
-            <h1 id="x5"></h1>
+        <div onclick="placePiece('b2')" class="centroCentro alinhamento">
+            <h1 id="b2"></h1>
         </div>
-        <div onclick="mostraX('x6')" class="centroDireito alinhamento">
-            <h1 id="x6"></h1>
+        <div onclick="placePiece('c2')" class="centroDireito alinhamento">
+            <h1 id="c2"></h1>
         </div>
-        <div onclick="mostraX('x7')" class="inferiorEsquerdo alinhamento">
-            <h1 id="x7"></h1>
+
+        <div onclick="placePiece('a3')" class="inferiorEsquerdo alinhamento">
+            <h1 id="a3"></h1>
         </div>
-        <div onclick="mostraX('x8')" class="inferiorCentro alinhamento">
-            <h1 id="x8"></h1>
+        <div onclick="placePiece('b3')" class="inferiorCentro alinhamento">
+            <h1 id="b3"></h1>
         </div>
-        <div onclick="mostraX('x9')" class="inferiorDireito alinhamento">
-            <h1 id="x9"></h1>
+        <div onclick="placePiece('c3')" class="inferiorDireito alinhamento">
+            <h1 id="c3"></h1>
         </div>
     </div>
     <div class="selectPlayer">
         <div class="input-group input-group-sm mb-3">
             <span class="input-group-text" id="inputGroup-sizing-sm">Name player 1:</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control" id="player1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-3">
             <span class="input-group-text" id="inputGroup-sizing-sm">Name player 2:</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control" id="player2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="d-grid gap-2">
-            <button class="btn btn-success" type="button">Set player</button>
+            <button class="btn btn-success" onclick="beginGame()" type="button">Set player</button>
           </div>
     </div>
 </body>
